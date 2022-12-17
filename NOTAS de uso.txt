@@ -1,0 +1,97 @@
+funciones del programa:
+CRM GYM management
+
+COlORES:
+BLANCO: #FFFFFFFFF
+GRIZ: RGB(106,106,106)
+AZUL: RGB(2,98,161)
+
+OPCIONES DEL MENU: 
+    INICIO
+    REGISTRO
+    POS
+    CONSULTA    
+    CONFIG
+
+ACCESO EMPLEADO
+    INICO 
+    REGISTRO   
+    POS 
+    CONSULTA
+
+ACCESO EMPLEADO ADMIN 
+    HEREDA DE EMPLEADO
+    CONFIG
+
+
+
+
+CLASS INICIO
+    SE MUESTRA:     
+    N_REGISTRADOS
+    N_TOTAL ACTIVOS
+    N_TOTAL NO ACTIVOS
+    NUEVOS_REGISTROS_MES
+    GRAFICO Y CON LOS CLIENTE ACTIVOS
+    SE PUEDE BUSCAR INFO BASICA DEL CLIENTE AQUI
+
+CLASS REGISTRO
+    SE REGISTRAN LOS DATOS DEL CLIENTE
+
+CLASS POS
+    SE BUSCA AL CLIENTE
+    SE FACTURA LA CANTIDAD DE DIAS 
+    TE MUESTRA LA FECHA EN LA QUE SE TE CULMINARA LA MENBRESIA
+
+CLASS CONSULTA
+    CONSULTA LOS DATOS ESPESIFICOS DEL CLIENTE
+
+CLASS CONFIG
+    SOLO PERMITIDO EL ACCESO A UN ADMIN 
+    TE DEJA CAMBIAR LA CONTRASEÑA DEL ADMIN
+    CAMBIAR EL PRECIO DEL DIA
+    CAMBIAR EL PORCENTAJE DE DESCUENTO 
+
+
+Datos que se necesitaran saber 
+
+
+
+tabla cliente: 
+
+ID_cliente : int 
+Nombre: str
+Apellido: str
+telefono: str
+Descripcion_residencial: st
+
+tabla empleado
+
+Empleado 
+ID_empleado : int
+Nombre:str
+apellido : str
+user : str
+password : int 
+status: str (admin/empleado normal)
+
+
+
+tabla fecha de inscripcion
+fecha
+
+tabla fecha fin menbresia
+hereda cliente
+fecha 
+
+tabla pagos
+hereda cliente 
+dias_pagon
+pago
+
+
+
+
+
+
+ 
